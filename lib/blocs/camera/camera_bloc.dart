@@ -24,6 +24,8 @@ class CameraBloc extends Bloc<CameraEvent, CameraState> {
   }) : super(CameraInitial()) {
     on<CameraEvent>((event, emit) async {
       await MyCameraEvent(emit, event);
+
+      //тест
     });
   }
 
